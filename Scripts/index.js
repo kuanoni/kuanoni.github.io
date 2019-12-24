@@ -27,7 +27,6 @@ function load_story(json) {
 }
 
 function set_buttons() {
-    console.log(author_list)
     var buttons_inner = '';
 
     for(var i = 0; i < author_list.length; i++) {
