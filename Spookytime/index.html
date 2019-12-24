@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body style="padding: 24px;">
+<div class="container">
+    <div class="row">
+        <div class="btn-group" id="author-buttons" role="group"></div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+
+            <h4>Click a word!</h4>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Author</th>
+                        <th scope="col">Word Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="word-author">-</td>
+                        <td id="word-count">-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4>Leaderboard</h4>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Author</th>
+                        <th scope="col">Word Count</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard">
+                </tbody>
+            </table>
+            <br>
+            <h4>Top Words</h4>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Word</th>
+                        <th scope="col">Word Count</th>
+                    </tr>
+                </thead>
+                <tbody id="top-words">
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body">
+                    <p class="display-4">Spooky Time 2019</p>
+                    <div id="story-text">Loading story...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
