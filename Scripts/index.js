@@ -30,7 +30,10 @@ function set_buttons() {
     var buttons_inner = '';
 
     for(var i = 0; i < author_list.length; i++) {
-        buttons_inner += '<button type="button" class="btn btn-outline-dark btn-sm" id="' + author_list[i] + '">' + author_list[i] + '</button>';
+        if(i % 5 == 0)
+            buttons_inner += '<button type="button" class="btn btn-outline-dark btn-sm" id="' + author_list[i] + '">' + author_list[i] + '</button><br>';
+        else
+            buttons_inner += '<button type="button" class="btn btn-outline-dark btn-sm" id="' + author_list[i] + '">' + author_list[i] + '</button><br>';
     }
 
     document.getElementById('author-buttons').innerHTML = buttons_inner;

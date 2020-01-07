@@ -1,7 +1,9 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="../Stylesheets/styles.css">
 </head>
 <body style="padding: 24px;">
 <div class="container">
@@ -13,23 +15,25 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
-
-            <h4>Click a word!</h4>
-            <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Author</th>
-                        <th scope="col">Word Count</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="word-author">-</td>
-                        <td id="word-count">-</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="sticky-top click-word">
+                <h4>Click a word!</h4>
+                <table class="sticky-top table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Author</th>
+                            <th scope="col">Word Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="word-author">-</td>
+                            <td id="word-count">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <br>
+
             <h4>Leaderboard</h4>
             <table class="table table-bordered table-hover">
                 <thead>
@@ -42,6 +46,7 @@
                 </tbody>
             </table>
             <br>
+
             <h4>Top Words</h4>
             <table class="table table-bordered table-hover">
                 <thead>
